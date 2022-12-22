@@ -1,0 +1,307 @@
+sizeof(char)   = 1
+sizeof(int)    = 4
+sizeof(long)   = 8
+sizeof(uchar)  = 1  max = 255
+sizeof(ushort) = 2  max = 65535
+sizeof(uint)   = 4  max = 4294967295
+sizeof(ulong)  = 8  max = 18446744073709551615
+sizeof(size_t) = 8  max = 18446744073709551615
+
+N = 2 (1000 repeats)
+--- CHAR -----------------------------------------------
+OPA           [mem = 4         ]  [time = 0.000000116]
+HEAP'S        [mem = 4         ]  [time = 0.000000183]
+PSIA (UCHAR)  [mem = 5         ]  [time = 0.000000320]
+PSIA (USHORT) [mem = 7         ]  [time = 0.000000355]
+PSIA (UINT)   [mem = 11        ]  [time = 0.000000320]
+PSIA (ULONG)  [mem = 19        ]  [time = 0.000000320]
+PSIA          [mem = 19        ]  [time = 0.000000321]
+--- INT  -----------------------------------------------
+OPA           [mem = 16        ]  [time = 0.000000104]
+HEAP'S        [mem = 16        ]  [time = 0.000000209]
+PSIA (UCHAR)  [mem = 14        ]  [time = 0.000000311]
+PSIA (USHORT) [mem = 16        ]  [time = 0.000000311]
+PSIA (UINT)   [mem = 20        ]  [time = 0.000000309]
+PSIA (ULONG)  [mem = 28        ]  [time = 0.000000307]
+PSIA          [mem = 28        ]  [time = 0.000000312]
+--- LONG -----------------------------------------------
+OPA           [mem = 32        ]  [time = 0.000000101]
+HEAP'S        [mem = 32        ]  [time = 0.000000199]
+PSIA (UCHAR)  [mem = 26        ]  [time = 0.000000323]
+PSIA (USHORT) [mem = 28        ]  [time = 0.000000307]
+PSIA (UINT)   [mem = 32        ]  [time = 0.000000318]
+PSIA (ULONG)  [mem = 40        ]  [time = 0.000000310]
+PSIA          [mem = 40        ]  [time = 0.000000310]
+--------------------------------------------------------
+
+N = 3 (1000 repeats)
+--- CHAR -----------------------------------------------
+OPA           [mem = 18        ]  [time = 0.000000271]
+HEAP'S        [mem = 18        ]  [time = 0.000000264]
+PSIA (UCHAR)  [mem = 15        ]  [time = 0.000000507]
+PSIA (USHORT) [mem = 21        ]  [time = 0.000000515]
+PSIA (UINT)   [mem = 33        ]  [time = 0.000000512]
+PSIA (ULONG)  [mem = 57        ]  [time = 0.000000503]
+PSIA          [mem = 57        ]  [time = 0.000000505]
+--- INT  -----------------------------------------------
+OPA           [mem = 72        ]  [time = 0.000000348]
+HEAP'S        [mem = 72        ]  [time = 0.000000357]
+PSIA (UCHAR)  [mem = 42        ]  [time = 0.000000511]
+PSIA (USHORT) [mem = 48        ]  [time = 0.000000513]
+PSIA (UINT)   [mem = 60        ]  [time = 0.000000517]
+PSIA (ULONG)  [mem = 84        ]  [time = 0.000000485]
+PSIA          [mem = 84        ]  [time = 0.000000494]
+--- LONG -----------------------------------------------
+OPA           [mem = 144       ]  [time = 0.000000337]
+HEAP'S        [mem = 144       ]  [time = 0.000000354]
+PSIA (UCHAR)  [mem = 78        ]  [time = 0.000000515]
+PSIA (USHORT) [mem = 84        ]  [time = 0.000000509]
+PSIA (UINT)   [mem = 96        ]  [time = 0.000000518]
+PSIA (ULONG)  [mem = 120       ]  [time = 0.000000490]
+PSIA          [mem = 120       ]  [time = 0.000000495]
+--------------------------------------------------------
+
+N = 4 (1000 repeats)
+--- CHAR -----------------------------------------------
+OPA           [mem = 96        ]  [time = 0.000000555]
+HEAP'S        [mem = 96        ]  [time = 0.000000614]
+PSIA (UCHAR)  [mem = 57        ]  [time = 0.000000786]
+PSIA (USHORT) [mem = 81        ]  [time = 0.000000812]
+PSIA (UINT)   [mem = 129       ]  [time = 0.000000745]
+PSIA (ULONG)  [mem = 225       ]  [time = 0.000000763]
+PSIA          [mem = 225       ]  [time = 0.000000761]
+--- INT  -----------------------------------------------
+OPA           [mem = 384       ]  [time = 0.000001018]
+HEAP'S        [mem = 384       ]  [time = 0.000001126]
+PSIA (UCHAR)  [mem = 156       ]  [time = 0.000000839]
+PSIA (USHORT) [mem = 180       ]  [time = 0.000000819]
+PSIA (UINT)   [mem = 228       ]  [time = 0.000000781]
+PSIA (ULONG)  [mem = 324       ]  [time = 0.000000803]
+PSIA          [mem = 324       ]  [time = 0.000000799]
+--- LONG -----------------------------------------------
+OPA           [mem = 768       ]  [time = 0.000000970]
+HEAP'S        [mem = 768       ]  [time = 0.000001087]
+PSIA (UCHAR)  [mem = 288       ]  [time = 0.000000824]
+PSIA (USHORT) [mem = 312       ]  [time = 0.000000800]
+PSIA (UINT)   [mem = 360       ]  [time = 0.000000780]
+PSIA (ULONG)  [mem = 456       ]  [time = 0.000000790]
+PSIA          [mem = 456       ]  [time = 0.000000779]
+--------------------------------------------------------
+
+N = 5 (1000 repeats)
+--- CHAR -----------------------------------------------
+OPA           [mem = 600       ]  [time = 0.000002579]
+HEAP'S        [mem = 600       ]  [time = 0.000004576]
+PSIA (UCHAR)  [mem = 273       ]  [time = 0.000002395]
+PSIA (USHORT) [mem = 393       ]  [time = 0.000002214]
+PSIA (UINT)   [mem = 633       ]  [time = 0.000002007]
+PSIA (ULONG)  [mem = 1113      ]  [time = 0.000002093]
+PSIA          [mem = 1113      ]  [time = 0.000002072]
+--- INT  -----------------------------------------------
+OPA           [mem = 2400      ]  [time = 0.000004689]
+HEAP'S        [mem = 2400      ]  [time = 0.000005556]
+PSIA (UCHAR)  [mem = 732       ]  [time = 0.000002211]
+PSIA (USHORT) [mem = 852       ]  [time = 0.000002250]
+PSIA (UINT)   [mem = 1092      ]  [time = 0.000002322]
+PSIA (ULONG)  [mem = 1572      ]  [time = 0.000002344]
+PSIA          [mem = 1572      ]  [time = 0.000002454]
+--- LONG -----------------------------------------------
+OPA           [mem = 4800      ]  [time = 0.000004403]
+HEAP'S        [mem = 4800      ]  [time = 0.000004859]
+PSIA (UCHAR)  [mem = 1344      ]  [time = 0.000002528]
+PSIA (USHORT) [mem = 1464      ]  [time = 0.000002503]
+PSIA (UINT)   [mem = 1704      ]  [time = 0.000002364]
+PSIA (ULONG)  [mem = 2184      ]  [time = 0.000002390]
+PSIA          [mem = 2184      ]  [time = 0.000002369]
+--------------------------------------------------------
+
+N = 6 (1000 repeats)
+--- CHAR -----------------------------------------------
+OPA           [mem = 4320      ]  [time = 0.000013984]
+HEAP'S        [mem = 4320      ]  [time = 0.000016485]
+PSIA (UCHAR)  [ERROR = 3]
+PSIA (USHORT) [mem = 2313      ]  [time = 0.000010471]
+PSIA (UINT)   [mem = 3753      ]  [time = 0.000010559]
+PSIA (ULONG)  [mem = 6633      ]  [time = 0.000010090]
+PSIA          [mem = 6633      ]  [time = 0.000010130]
+--- INT  -----------------------------------------------
+OPA           [mem = 17280     ]  [time = 0.000027607]
+HEAP'S        [mem = 17280     ]  [time = 0.000031853]
+PSIA (UCHAR)  [ERROR = 3]
+PSIA (USHORT) [mem = 4932      ]  [time = 0.000011788]
+PSIA (UINT)   [mem = 6372      ]  [time = 0.000011130]
+PSIA (ULONG)  [mem = 9252      ]  [time = 0.000011319]
+PSIA          [mem = 9252      ]  [time = 0.000009982]
+--- LONG -----------------------------------------------
+OPA           [mem = 34560     ]  [time = 0.000013895]
+HEAP'S        [mem = 34560     ]  [time = 0.000011860]
+PSIA (UCHAR)  [ERROR = 3]
+PSIA (USHORT) [mem = 8424      ]  [time = 0.000004228]
+PSIA (UINT)   [mem = 9864      ]  [time = 0.000003675]
+PSIA (ULONG)  [mem = 12744     ]  [time = 0.000003288]
+PSIA          [mem = 12744     ]  [time = 0.000003208]
+--------------------------------------------------------
+
+N = 7 (1000 repeats)
+--- CHAR -----------------------------------------------
+OPA           [mem = 35280     ]  [time = 0.000024159]
+HEAP'S        [mem = 35280     ]  [time = 0.000029441]
+PSIA (UCHAR)  [ERROR = 3]
+PSIA (USHORT) [mem = 15993     ]  [time = 0.000014518]
+PSIA (UINT)   [mem = 26073     ]  [time = 0.000013717]
+PSIA (ULONG)  [mem = 46233     ]  [time = 0.000014161]
+PSIA          [mem = 46233     ]  [time = 0.000014001]
+--- INT  -----------------------------------------------
+OPA           [mem = 141120    ]  [time = 0.000048214]
+HEAP'S        [mem = 141120    ]  [time = 0.000053370]
+PSIA (UCHAR)  [ERROR = 3]
+PSIA (USHORT) [mem = 33732     ]  [time = 0.000015975]
+PSIA (UINT)   [mem = 43812     ]  [time = 0.000015294]
+PSIA (ULONG)  [mem = 63972     ]  [time = 0.000016052]
+PSIA          [mem = 63972     ]  [time = 0.000016054]
+--- LONG -----------------------------------------------
+OPA           [mem = 282240    ]  [time = 0.000041996]
+HEAP'S        [mem = 282240    ]  [time = 0.000050354]
+PSIA (UCHAR)  [ERROR = 3]
+PSIA (USHORT) [mem = 57384     ]  [time = 0.000016117]
+PSIA (UINT)   [mem = 67464     ]  [time = 0.000014456]
+PSIA (ULONG)  [mem = 87624     ]  [time = 0.000015522]
+PSIA          [mem = 87624     ]  [time = 0.000015428]
+--------------------------------------------------------
+
+N = 8 (1000 repeats)
+--- CHAR -----------------------------------------------
+OPA           [mem = 322560    ]  [time = 0.000175645]
+HEAP'S        [mem = 322560    ]  [time = 0.000217944]
+PSIA (UCHAR)  [ERROR = 3]
+PSIA (USHORT) [mem = 126873    ]  [time = 0.000107558]
+PSIA (UINT)   [mem = 207513    ]  [time = 0.000096865]
+PSIA (ULONG)  [mem = 368793    ]  [time = 0.000101534]
+PSIA          [mem = 368793    ]  [time = 0.000101837]
+--- INT  -----------------------------------------------
+OPA           [mem = 1290240   ]  [time = 0.000348853]
+HEAP'S        [mem = 1290240   ]  [time = 0.000406595]
+PSIA (UCHAR)  [ERROR = 3]
+PSIA (USHORT) [mem = 265572    ]  [time = 0.000121352]
+PSIA (UINT)   [mem = 346212    ]  [time = 0.000114403]
+PSIA (ULONG)  [mem = 507492    ]  [time = 0.000121612]
+PSIA          [mem = 507492    ]  [time = 0.000122220]
+--- LONG -----------------------------------------------
+OPA           [mem = 2580480   ]  [time = 0.000334594]
+HEAP'S        [mem = 2580480   ]  [time = 0.000398031]
+PSIA (UCHAR)  [ERROR = 3]
+PSIA (USHORT) [mem = 450504    ]  [time = 0.000119199]
+PSIA (UINT)   [mem = 531144    ]  [time = 0.000109809]
+PSIA (ULONG)  [mem = 692424    ]  [time = 0.000115931]
+PSIA          [mem = 692424    ]  [time = 0.000115036]
+--------------------------------------------------------
+
+N = 9 (500 repeats)
+--- CHAR -----------------------------------------------
+OPA           [mem = 3265920   ]  [time = 0.001641679]
+HEAP'S        [mem = 3265920   ]  [time = 0.002115017]
+PSIA (UCHAR)  [ERROR = 3]
+PSIA (USHORT) [ERROR = 3]
+PSIA (UINT)   [mem = 1860633   ]  [time = 0.000851868]
+PSIA (ULONG)  [mem = 3312153   ]  [time = 0.000891317]
+PSIA          [mem = 3312153   ]  [time = 0.000894490]
+--- INT  -----------------------------------------------
+OPA           [mem = 13063680  ]  [time = 0.003631391]
+HEAP'S        [mem = 13063680  ]  [time = 0.004052957]
+PSIA (UCHAR)  [ERROR = 3]
+PSIA (USHORT) [ERROR = 3]
+PSIA (UINT)   [mem = 3087972   ]  [time = 0.000948063]
+PSIA (ULONG)  [mem = 4539492   ]  [time = 0.001046731]
+PSIA          [mem = 4539492   ]  [time = 0.001034201]
+--- LONG -----------------------------------------------
+OPA           [mem = 26127360  ]  [time = 0.004333304]
+HEAP'S        [mem = 26127360  ]  [time = 0.004879636]
+PSIA (UCHAR)  [ERROR = 3]
+PSIA (USHORT) [ERROR = 3]
+PSIA (UINT)   [mem = 4724424   ]  [time = 0.000949162]
+PSIA (ULONG)  [mem = 6175944   ]  [time = 0.001022857]
+PSIA          [mem = 6175944   ]  [time = 0.001046015]
+--------------------------------------------------------
+
+N = 10 (200 repeats)
+--- CHAR -----------------------------------------------
+OPA           [mem = 36288000  ]  [time = 0.020415604]
+HEAP'S        [mem = 36288000  ]  [time = 0.024330392]
+PSIA (UCHAR)  [ERROR = 3]
+PSIA (USHORT) [ERROR = 3]
+PSIA (UINT)   [mem = 18553113  ]  [time = 0.008463607]
+PSIA (ULONG)  [mem = 33068313  ]  [time = 0.009168164]
+PSIA          [mem = 33068313  ]  [time = 0.009107134]
+--- INT  -----------------------------------------------
+OPA           [mem = 145152000 ]  [time = 0.047230958]
+HEAP'S        [mem = 145152000 ]  [time = 0.050951727]
+PSIA (UCHAR)  [ERROR = 3]
+PSIA (USHORT) [ERROR = 3]
+PSIA (UINT)   [mem = 30666852  ]  [time = 0.009482318]
+PSIA (ULONG)  [mem = 45182052  ]  [time = 0.010523275]
+PSIA          [mem = 45182052  ]  [time = 0.010577123]
+--- LONG -----------------------------------------------
+OPA           [mem = 290304000 ]  [time = 0.062344019]
+HEAP'S        [mem = 290304000 ]  [time = 0.070023103]
+PSIA (UCHAR)  [ERROR = 3]
+PSIA (USHORT) [ERROR = 3]
+PSIA (UINT)   [mem = 46818504  ]  [time = 0.009932153]
+PSIA (ULONG)  [mem = 61333704  ]  [time = 0.010851909]
+PSIA          [mem = 61333704  ]  [time = 0.010762610]
+--------------------------------------------------------
+
+N = 11 (100 repeats)
+--- CHAR -----------------------------------------------
+OPA           [mem = 439084800 ]  [time = 0.219628952]
+HEAP'S        [mem = 439084800 ]  [time = 0.263816008]
+PSIA (UCHAR)  [ERROR = 3]
+PSIA (USHORT) [ERROR = 3]
+PSIA (UINT)   [mem = 203621913 ]  [time = 0.100075085]
+PSIA (ULONG)  [mem = 363289113 ]  [time = 0.119822964]
+PSIA          [mem = 363289113 ]  [time = 0.120341734]
+--- INT  -----------------------------------------------
+OPA           [mem = 1756339200]  [time = 0.527998115]
+HEAP'S        [mem = 1756339200]  [time = 0.571028328]
+PSIA (UCHAR)  [ERROR = 3]
+PSIA (USHORT) [ERROR = 3]
+PSIA (UINT)   [mem = 335486052 ]  [time = 0.121143111]
+PSIA (ULONG)  [mem = 495153252 ]  [time = 0.144354691]
+PSIA          [mem = 495153252 ]  [time = 0.144290339]
+--- LONG -----------------------------------------------
+OPA           [mem = 3512678400]  [time = 0.743260280]
+HEAP'S        [mem = 3512678400]  [time = 0.789874055]
+PSIA (UCHAR)  [ERROR = 3]
+PSIA (USHORT) [ERROR = 3]
+PSIA (UINT)   [mem = 511304904 ]  [time = 0.138517751]
+PSIA (ULONG)  [mem = 670972104 ]  [time = 0.160365931]
+PSIA          [mem = 670972104 ]  [time = 0.160607898]
+--------------------------------------------------------
+
+N = 12 (50 repeats)
+--- CHAR -----------------------------------------------
+OPA           [mem = 5748019200]  [time = 2.639647584]
+HEAP'S        [mem = 5748019200]  [time = 3.199592080]
+PSIA (UCHAR)  [ERROR = 3]
+PSIA (USHORT) [ERROR = 3]
+PSIA (UINT)   [mem = 2438962713]  [time = 1.169724194]
+PSIA (ULONG)  [mem = 4354969113]  [time = 1.409118756]
+PSIA          [mem = 4354969113]  [time = 1.409205512]
+--- INT  -----------------------------------------------
+OPA           [ERROR = 2]
+HEAP'S        [ERROR = 2]
+PSIA (UCHAR)  [ERROR = 3]
+PSIA (USHORT) [ERROR = 3]
+PSIA (UINT)   [mem = 4007831652]  [time = 1.387592604]
+PSIA (ULONG)  [mem = 5923838052]  [time = 1.663842387]
+PSIA          [mem = 5923838052]  [time = 1.663444262]
+--- LONG -----------------------------------------------
+OPA           [ERROR = 2]
+HEAP'S        [ERROR = 2]
+PSIA (UCHAR)  [ERROR = 3]
+PSIA (USHORT) [ERROR = 3]
+PSIA (UINT)   [mem = 6099656904]  [time = 1.605045639]
+PSIA (ULONG)  [mem = 8015663304]  [time = 1.863252088]
+PSIA          [mem = 8015663304]  [time = 1.863754380]
+--------------------------------------------------------
+
+busywork garbage: -1681198328 612499125000
